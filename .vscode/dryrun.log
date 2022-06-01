@@ -1,0 +1,22 @@
+make.exe --dry-run --always-make --keep-going --print-directory
+make: Entering directory 'c:/Users/oukyl/OneDrive/Bureau/Projet_SNAKE'
+g++ -ggdb -Wall -c src/main.cpp -o obj/main.o
+ 
+g++ -ggdb -Wall -c src/Game.cpp -o obj/Game.o
+g++ -ggdb -Wall -c src/Snake.cpp -o obj/Snake.o
+ 
+g++ -ggdb -Wall -c src/Vector2D.cpp -o obj/Vector2D.o
+ 
+g++ -ggdb -Wall -c src/Apple.cpp -o obj/Apple.o
+ 
+g++ -ggdb -Wall -c src/Constantes.cpp -o obj/Constantes.o
+ 
+g++ -ggdb -Wall -c src/Poison.cpp -o obj/Poison.o
+ 
+g++ -ggdb -Wall -c src/Reducer.cpp -o obj/Reducer.o
+ 
+g++ -ggdb -Wall -c src/SpeedDown.cpp -o obj/SpeedDown.o
+ 
+g++ -ggdb -Wall obj/main.o obj/Game.o obj/Snake.o obj/Vector2D.o obj/Apple.o obj/Constantes.o obj/Poison.o obj/Reducer.o obj/SpeedDown.o -o bin/snake -lSDL2 -lSDL2_ttf -lSDL2_image -lSDL2_mixer
+make: Leaving directory 'c:/Users/oukyl/OneDrive/Bureau/Projet_SNAKE'
+ 
